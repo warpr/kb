@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    color: grey;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    transform: rotate(270deg) translate(-8rem, -8rem);
+    width: 20rem;
+    border-bottom: 2px solid grey;
+}
+
+layer-label {
+    float: left;
+    width: 5rem;
+    height: 23rem;
+    margin-right: 2rem;
+}
+
+key-row {
+    display: flex;
+}
+
+key-placeholder,
+key-cap {
+    margin: 0.5rem;
+}
+
+key-placeholder {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+key-cap {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background: #444;
+    color: white;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+key-macro {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    color: violet;
+}
+
+key-emacs {
+    position: absolute;
+    color: violet;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 50%;
+}
+
+key-tap {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+key-shifted {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    color: dodgerblue;
+}
+
+key-hold {
+    color: limegreen;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
