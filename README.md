@@ -1,7 +1,7 @@
-warpr.github.io/kb/
+frob.nl/kb/
 ===================
 
-This repo contains some quick hacky PHP code to display my [QMK](https://qmk.fm/) keymap at [warpr.github.io/kb](https://warpr.github.io/kb/).
+This repo contains some quick hacky PHP code to display my [QMK](https://qmk.fm/) keymap at [frob.nl/kb](https://frob.nl/kb/).
 
 
 License
