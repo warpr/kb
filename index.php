@@ -35,19 +35,11 @@ $accents = [
     $thumb,
 ];
 
-$shortcuts = [
-    ['', '', '', '', '', '', null, '', '', 'fab-chrome', '1pass', '', ''],
-    ['', '', '', '', '', '', null, 'fab-discord', 'emacs', 'fas-terminal', 'fab-firefox-browser', 'fab-safari', ''],
-    ['', '', '', '', '', '', null, 'picard', '', '', "virtual\nbox", 'zoom', ''],
-    $thumb,
-];
-
 $layers = [
     'Dvorak' => $dvorak,
     'Lower' => $lower,
     'Raise' => $raise,
     'MacOS ⌥' => $accents,
-    '⎈+⌘' => $shortcuts,
 ];
 
 function render_key($key)
@@ -61,11 +53,7 @@ function render_key($key)
 
     echo '<key-cap>';
 
-    if (preg_match("/^fab-(.*)$/", $parts[0], $matches)) {
-        echo '<key-tap class="big"><i class="fab fa-'. $matches[1] . '"></i></key-macro>';
-    } else if (preg_match("/^fas-(.*)$/", $parts[0], $matches)) {
-        echo '<key-tap class="big"><i class="fas fa-'. $matches[1] . '"></i></key-macro>';
-    } else if (preg_match("/^DIM\.(.*)$/", $parts[0], $matches)) {
+    if (preg_match("/^DIM\.(.*)$/", $parts[0], $matches)) {
         echo '<key-tap class="big dim">' . trim($matches[1]) . '</key-tap>';
     } elseif (preg_match("/^(([A-Z]+)\. )(.*)$/", $parts[0], $matches)) {
         $grp = strtolower(trim($matches[2]));
@@ -112,7 +100,6 @@ function render_layer($name, $data)
         <style>
             <?php require_once 'style.css'; ?>
         </style>
-        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" />
     </head>
     <body>
    <?php foreach ($layers as $name => $data) {
