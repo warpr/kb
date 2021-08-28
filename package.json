@@ -1,6 +1,10 @@
 {
+  "name": "warpr.github.io/kb",
+  "version": "0.1.0",
   "dependencies": {
     "@prettier/plugin-php": "^0.17.3",
     "prettier": "^2.3.2"
-  }
+  },
+  "author": "Kuno Woudt <kuno@frob.nl>",
+  "license": "copyleft-next-0.3.1"
 }

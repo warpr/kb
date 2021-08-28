@@ -96,6 +96,7 @@ function render_layer($name, $data)
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
         <title>Keyboard Layout</title>
         <style>
             <?php require_once 'style.css'; ?>
