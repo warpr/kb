@@ -15,17 +15,17 @@ $dvorak = [
 ];
 
 $lower = [
-    ['`', '1', '2', '3', '4', '5', null, '6', '7', '8', '9', '0', '⌫'],
-    ['{', '!', '@', '#', '$', '%', null, '?', '/', '=', '\\', '|', '}'],
-    ['[', '', '', '', '~', 'DIM. ⎵', null, '^', '&', '*', '+', '', ']'],
-    $thumb,
+    ['', 'Page Up', 'Word Left', '↑', 'Word Right', 'Home', null, 'DIM. *', '7', '8', '9', 'DIM. -', 'DIM. ⌫'],
+    ['', 'Page Down', '←', '↓', '→', 'End', null, 'DIM. /', '4', '5', '6', 'DIM. +', 'DIM. ⏎'],
+    ['', '', 'DEL', 'MACRO. ⌘⇧3', 'MACRO. ⌘⇧4', 'MACRO. ⌘⇧5', null, 'DIM. .', '1', '2', '3', 'DIM. =', ''],
+    [null, null, null, "\t\t⌥", "\t\t⌘", "⎵\t\tLower", null, '0', "\t\t⌘", "\t\t⌥", null, null, null],
 ];
 
 $raise = [
-    ['', '', '', 'MACRO. ⌘⇧3', 'MACRO. ⌘⇧4', 'MACRO. ⌘⇧5', null, 'Page Up', 'Word Left', '↑', 'Word Right', 'Home', 'DIM. ⌫'],
-    ['', '', '', '', '', '', null, 'Page Down', '←', '↓', '→', 'End', ''],
-    ['', '', '', '', '', '', null, 'DIM. ⏎', 'MOOM. ⎈⌘M', 'DEL', 'DIM. ⌫', '', ''],
-    $thumb,
+    ['DIM. `', '!', '@', '#', '%', '', null, '^', '&', '*', '+', '', 'DIM. ⌫'],
+    ['{', '', '`', '~', '$', '', null, '?', '/', '=', '\\', '|', '}'],
+    ['[', '', '', '', '', '', null, '', 'MOOM. ⎈⌘M', '', '', '', ']'],
+    [null, null, null, "\t\t⌥", "\t\t⌘", "\t\tAdjust", null, "⏎\t\tRaise", "\t\t⌘", "\t\t⌥", null, null, null],
 ];
 
 $accents = [
@@ -35,11 +35,19 @@ $accents = [
     $thumb,
 ];
 
+$adjust = [
+    ['', 'F1', 'F2', 'F3', 'F4', '', null, 'INS', 'Print Scrn', 'Scroll Lock', "Pause\t\tBreak", '', ''],
+    ['', 'F5', 'F6', 'F7', 'F8', '', null, '', '', '', '', '', ''],
+    ['', 'F9', 'F10', 'F11', 'F12', '', null, '', '', '', '', '', ''],
+    $thumb,
+];
+
 $layers = [
     'Dvorak' => $dvorak,
     'Lower' => $lower,
     'Raise' => $raise,
     'MacOS ⌥' => $accents,
+    'Adjust' => $adjust,
 ];
 
 function render_key($key)
